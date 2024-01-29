@@ -13,7 +13,7 @@ function TodoApp() {
   const [editingId, setEditingId] = useState(null);
   const [editedTodo, setEditedTodo] = useState({ title: '', description: '' ,completed: false});
   
-  const url = `${process.env.REACT_APP_BACKENDURL}/api/todo`;
+  const url = `${import.meta.env.VITE_BACKENDURL}/api/todo`;
   // console.log();
 
   useEffect(() => {
