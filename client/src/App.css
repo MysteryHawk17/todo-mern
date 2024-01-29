@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: rgb(85, 228, 85)
+}
+
+button.edit {
+  background-color: #3498db;
+  color: #fff;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+button.green {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+button.red {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.todos {
+  margin-top: 20px;
+}
+
+.todo {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s ease;
+}
+
+.todo:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.but-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 10px;
+  }
+
+  .todo {
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 400px;
+    padding: 5px;
+  }
+
+  .todo {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 10px);
+  }
+
+  button {
+    padding: 6px 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .description {
+    font-size: 14px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
+
