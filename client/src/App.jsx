@@ -5,8 +5,7 @@ import { TiTick } from "react-icons/ti";
 import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { FaRedo } from "react-icons/fa";
-import * as dotenv from "dotenv";
-dotenv.config();
+
 function TodoApp() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState({ title: '', description: '' });
